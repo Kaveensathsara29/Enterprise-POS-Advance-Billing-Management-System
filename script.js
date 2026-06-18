@@ -509,7 +509,7 @@ async function loginSuccess(role, email) {
     const displayName = email.split('@')[0].charAt(0).toUpperCase() + email.split('@')[0].slice(1);
     if (currentUserEmailDisplay) currentUserEmailDisplay.innerText = displayName;
 
-    document.getElementById('nav-brand').innerHTML = role === 'admin' ? 'Nexus<span>Admin</span>' : 'Nexus<span>Bill</span>';
+    document.getElementById('nav-brand').innerHTML = role === 'admin' ? 'MASTERBILL<span>Admin</span>' : 'MASTER<span>BILL</span>';
 
     currentUserRole = role;
     if (role === 'admin') {
