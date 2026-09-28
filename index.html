@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Outfit:wght@300;400;600;700&display=swap"
         rel="stylesheet">
 
-     <link rel="icon" type="image/png" href="FaviconS.jpg"> 
+    <link rel="icon" type="image/png" href="FaviconS.jpg">
 
 </head>
 
@@ -52,7 +52,7 @@
         <!-- Registration Card (Hidden initially) -->
         <div class="login-card glass hidden" id="register-card">
             <div class="login-logo">
-                <div class="logo-icon" ></div>
+                <div class="logo-icon"></div>
                 <h1><span>Register</span></h1>
             </div>
             <h2>Admin Area</h2>
@@ -957,10 +957,13 @@
     </div>
     <footer class="billing-footer">
         <div class="footer-content">
-            <p>&copy; 2026 Billing System. All Rights Reserved.</p>
+            <p>&copy; <span id="year"></span>&nbsp; MASTERBILL. All Rights Reserved.</p>
             <p class="developer-tag">Developed by <span>KAVEEN SATHSARA.</span></p>
 
         </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 
